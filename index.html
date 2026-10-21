@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Jed Alboroto | Portfolio</title>
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">CA.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#letter">Letter</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-badge">👋 Welcome to my portfolio</span>
+            <h1 class="hero-title">Hi, I'm <span>Christian Jed Alboroto</span></h1>
+            <p class="hero-subtitle">BS Information Technology Student</p>
+            <p class="hero-desc">
+                Passionate about building digital experiences that matter. I blend creativity with technology to craft meaningful solutions while constantly learning and growing.
+            </p>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="floating-blob blob-1"></div>
+            <div class="profile-card">
+                <!-- REPLACE 'jed.jpg' WITH YOUR PROFILE IMAGE FILE PATH OR URL BELOW -->
+                <img src="jed.jpg" alt="Christian Jed Alboroto" class="profile-img" onerror="this.src='https://placehold.co/360x440/1E293B/38BDF8?text=jed.jpg'">
+            </div>
+            <div class="floating-blob blob-2"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="section-head">
+            <p class="section-tag">What I Bring</p>
+            <h2 class="section-title">Skills & <span>Competencies</span></h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3 class="skill-name">HTML5 & CSS3</h3>
+                <p class="skill-desc">Semantic markup, responsive design, modern layouts and styling techniques.</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-desc">Dynamic interactions, DOM manipulation, and building interactive logic.</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-name">C / C++ Programming</h3>
+                <p class="skill-desc">Algorithm design, problem-solving, and structured coding practices.</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-name">Customer Support</h3>
+                <p class="skill-desc">Client relations, problem resolution, and building lasting relationships.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-head">
+            <p class="section-tag">Featured Work</p>
+            <h2 class="section-title">My <span>Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-banner">📄</div>
+                <div class="project-body">
+                    <h3 class="project-title">My First Webpage</h3>
+                    <p class="project-desc">Foundational HTML/CSS project demonstrating core web structure, formatting, and layout concepts.</p>
+                    <a href="javascript:void(0)" class="project-link" onclick="openModal('firstPageModal')">View Details →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-banner">👤</div>
+                <div class="project-body">
+                    <h3 class="project-title">Student Profile Cards</h3>
+                    <p class="project-desc">Interactive dashboard with search functionality, dynamic theming, and student data display.</p>
+                    <a href="javascript:void(0)" class="project-link" onclick="openModal('profilesModal')">View Details →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-banner">📖</div>
+                <div class="project-body">
+                    <h3 class="project-title">The Codex</h3>
+                    <p class="project-desc">Digital storybook experience with custom layouts, illustrations, and smooth page navigation.</p>
+                    <a href="#stories" class="project-link">View Details →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-banner">💐</div>
+                <div class="project-body">
+                    <h3 class="project-title">Teacher's Day Message</h3>
+                    <p class="project-desc">Personalized appreciation page with custom layouts, photos, and heartfelt messaging.</p>
+                    <a href="javascript:void(0)" class="project-link" onclick="showToast('Teacher\'s Day Message interactive preview active.')">View Details →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Book Section -->
+    <section class="section" id="stories">
+        <div class="section-head">
+            <p class="section-tag">Reading Collection</p>
+            <h2 class="section-title">Story <span>Book</span></h2>
+        </div>
+        <p class="stories-description">Choose a story and discover a new world.</p>
+        
+        <div class="about" id="about">
+            <div class="about-image">
+                <!-- REPLACE 'lib.jpg' WITH YOUR LIBRARY / STORYBOOK COVER IMAGE FILE PATH OR URL BELOW -->
+                <img src="book.jpg" alt="Library" onerror="this.src='https://placehold.co/600x400/334155/38BDF8?text=lib.jpg'">
+            </div>
+            <div class="about-content">
+                <h2>About Story Book</h2>
+                <p>The Story Book is a collection of stories that transport readers to different worlds, places, and times. 
+                Each story offers a unique journey filled with interesting characters, exciting adventures, 
+                meaningful experiences, and lessons that readers can learn from.</p>
+            </div>
+        </div>
+
+        <div class="story-cards" style="margin-top: 4rem;">
+            <!-- REPLACE 'pic1.jpg' WITH YOUR STORY IMAGE FILE PATH OR URL BELOW -->
+            <div class="story-card" data-img="pic1.jpg" data-title="Atomic Habits" data-desc="The process of building a habit can be divided into four simple steps: cue, craving, response, and reward. Breaking it down into these fundamental parts can help us understand what a habit is, how it works, and how to improve it.">
+                <img src="atomic.jpg" alt="Atomic Habits" onerror="this.src='https://placehold.co/400x300/1E293B/34D399?text=pic1.jpg'">
+                <div class="story-card-content">
+                    <h3>Atomic Habits</h3>
+                    <p>The process of building a habit can be divided into four simple steps: cue, craving, response, and reward.</p>
+                    <button class="read-more-btn" onclick="openStoryModal(this)">Read More</button>
+                </div>
+            </div>
+            <!-- REPLACE 'pic2.jpg' WITH YOUR STORY IMAGE FILE PATH OR URL BELOW -->
+            <div class="story-card" data-img="pic2.jpg" data-title="Wicked" data-desc="When Dorothy triumphed over the Wicked Witch of the West in L. Frank Baum's classic tale, we heard only her side of the story. But what about her arch-nemesis, the mysterious witch? Where did she come from? How did she become so wicked? And what is the true nature of evil?">
+                <img src="pic 2.jpg" alt="Wicked" onerror="this.src='https://placehold.co/400x300/1E293B/A78BFA?text=pic2.jpg'">
+                <div class="story-card-content">
+                    <h3>Wicked</h3>
+                    <p>When Dorothy triumphed over the Wicked Witch of the West, we heard only her side of the story. But what about her arch-nemesis?</p>
+                    <button class="read-more-btn" onclick="openStoryModal(this)">Read More</button>
+                </div>
+            </div>
+            <!-- REPLACE 'pic3.jpg' WITH YOUR STORY IMAGE FILE PATH OR URL BELOW -->
+            <div class="story-card" data-img="pic3.jpg" data-title="Metamorphosis" data-desc="Tells the story of salesman Gregor Samsa, who wakes to find himself inexplicably transformed into a huge insect and struggles to adjust to this condition, as does his family.">
+                <img src="pic 3.jpg" alt="Metamorphosis" onerror="this.src='https://placehold.co/400x300/1E293B/38BDF8?text=pic3.jpg'">
+                <div class="story-card-content">
+                    <h3>Metamorphosis</h3>
+                    <p>Tells the story of salesman Gregor Samsa, who wakes to find himself inexplicably transformed into a huge insect.</p>
+                    <button class="read-more-btn" onclick="openStoryModal(this)">Read More</button>
+                </div>
+            </div>
+            <!-- REPLACE 'pic4.jpg' WITH YOUR STORY IMAGE FILE PATH OR URL BELOW -->
+            <div class="story-card" data-img="pic4.jpg" data-title="To Kill a Mockingbird" data-desc="The plot and characters are loosely based on Lee's observations of her family, her neighbors and an event that occurred near her hometown of Monroeville, Alabama, in 1936, when she was ten. Despite dealing with the serious issues of rape and racial inequality, the novel is renowned for its warmth and humor.">
+                <img src="pic 4.jpg" alt="To Kill a Mockingbird" onerror="this.src='https://placehold.co/400x300/1E293B/f09ab1?text=pic4.jpg'">
+                <div class="story-card-content">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>A story based on observations of family and neighbors, dealing with serious issues yet renowned for its warmth and humor.</p>
+                    <button class="read-more-btn" onclick="openStoryModal(this)">Read More</button>
+                </div>
+            </div>
+            <!-- REPLACE 'pic5.jpg' WITH YOUR STORY IMAGE FILE PATH OR URL BELOW -->
+            <div class="story-card" data-img="pic5.jpg" data-title="The King in Yellow" data-desc="I cannot forget Carcosa where black stars hang in the heavens; where the shadows of men's thoughts lengthen in the afternoon... I pray God will curse the writer, as the writer has cursed the world with the beautiful, stupendous creation, terrible in its simplicity, irresistible in its truth - a world which now trembles before the King in Yellow.">
+                <img src="pic 5.jpg" alt="The King in Yellow" onerror="this.src='https://placehold.co/400x300/1E293B/34D399?text=pic5.jpg'">
+                <div class="story-card-content">
+                    <h3>The King in Yellow</h3>
+                    <p>I cannot forget Carcosa where black stars hang in the heavens... a world which now trembles before the King in Yellow.</p>
+                    <button class="read-more-btn" onclick="openStoryModal(this)">Read More</button>
+                </div>
+            </div>
+            <!-- REPLACE 'pic6.jpg' WITH YOUR STORY IMAGE FILE PATH OR URL BELOW -->
+            <div class="story-card" data-img="pic6.jpg" data-title="Harry Potter and the Deathly Hallows" data-desc="The young wizard Harry Potter is about to turn seventeen. While being escorted to the Burrow by members of the Order of the Phoenix, the group is attacked by Death Eaters, who kill 'Mad-Eye' Moody and Hedwig and injure George Weasley. Lord Voldemort attempts to kill Harry but fails.">
+                <img src="pic 6.jpg" alt="Harry Potter and the Deathly Hallows" onerror="this.src='https://placehold.co/400x300/1E293B/38BDF8?text=pic6.jpg'">
+                <div class="story-card-content">
+                    <h3>Harry Potter and the Deathly Hallows</h3>
+                    <p>Harry is about to turn seventeen when the Order is attacked by Death Eaters, and Lord Voldemort attempts to kill him but fails.</p>
+                    <button class="read-more-btn" onclick="openStoryModal(this)">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Envelope / Letter Section -->
+    <section class="envelope-section" id="letter">
+        <div class="envelope-heading">
+            <h2>💌 A Special Letter</h2>
+            <p>Click the envelope to open it</p>
+        </div>
+        <div class="envelope" id="envelope" onclick="toggleEnvelope()">
+            <div class="flap"></div>
+            <div class="back"></div>
+            <div class="front"></div>
+            <div class="letter" id="letterContent">
+                <!-- REPLACE 'jed.jpg' WITH YOUR PORTRAIT IMAGE FILE PATH OR URL BELOW -->
+                <img src="mari.jpg" alt="Portrait" onerror="this.src='https://placehold.co/110x110/1E293B/d35478?text=jed.jpg'">
+                <h2>Dear Maam Mari,</h2>
+                <p> THANK YOU FOR YOUR GRACIOUS TEACHING MAAM MARI,
+                            FOR TEACHING US SOMETHING THAT WE DIDN'T EVEN KNOW
+                            AND FOR THE PATIENCE THAT YOU ALWAYS CARRY THROUGH
+                            EVERY CLASS.</p>
+                <p>With gratitude,<br><strong>Christian Jed Alboroto</strong></p>
+                <button class="close-letter-btn" onclick="event.stopPropagation(); closeEnvelope()">Close Letter</button>
+            </div>
+        </div>
+        <div class="hearts">
+            <span>♥</span>
+            <span>♥</span>
+            <span>♥</span>
+            <span>♥</span>
+            <span>♥</span>
+        </div>
+    </section>
+
+    <!-- Notification Toast Element -->
+    <div id="toast" class="notification-toast">Message sent successfully!</div>
+
+    <!-- MODAL: Story Details -->
+    <div class="modal-overlay" id="storyModal" onclick="closeModalOnOverlay(event)">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <img id="modalImg" src="" alt="Story Image" class="modal-img">
+            <h3 id="modalTitle" class="modal-title"></h3>
+            <p id="modalDesc" class="modal-text"></p>
+            <button class="modal-close" onclick="closeModal('storyModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- MODAL 1: My First Webpage -->
+    <div class="modal-overlay" id="firstPageModal" onclick="closeModalOnOverlay(event)">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <h2 class="modal-title">My First Webpage</h2>
+            <!-- REPLACE 'jed.jpg' WITH YOUR IMAGE FILE PATH OR URL BELOW -->
+            <img src="jed.jpg" alt="Christian Jed Alboroto" class="modal-img" onerror="this.src='https://placehold.co/280x280/1E293B/38BDF8?text=jed.jpg'">
+            <p class="modal-text">
+                Hello! My name is Christian Jed Alboroto. I am currently a BS Information Technology student. In my free time, I enjoy exploring technology, building things, and learning new skills. This simple project is one of my first steps into front-end design!
+            </p>
+            <button class="modal-btn" onclick="showToast('Thank you for exploring my project! 🎉')">Click Me</button>
+            <br>
+            <button class="modal-close" onclick="closeModal('firstPageModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Student Profiles Directory -->
+    <div class="modal-overlay" id="profilesModal" onclick="closeModalOnOverlay(event)">
+        <div class="modal-card" style="max-width: 750px;" onclick="event.stopPropagation()">
+            <h2 class="modal-title">Student Profile Directory</h2>
+            <div class="profiles-section">
+                <input type="text" id="studentSearchInput" class="search-bar" placeholder="Search student by name or ID..." onkeyup="filterStudents()">
+                <div class="profiles-grid" id="studentsContainer">
+                    <div class="student-card card-1" data-name="Christian Jed Alboroto" data-id="2023-0001" data-program="BS Information Technology">
+                        <div class="student-name">Christian Jed Alboroto</div>
+                        <div class="student-id">ID: 2023-0001</div>
+                        <div class="student-program">BS Information Technology</div>
+                    </div>
+                    <div class="student-card card-2" data-name="Maria Santos" data-id="2023-0042" data-program="BS Computer Science">
+                        <div class="student-name">Maria Santos</div>
+                        <div class="student-id">ID: 2023-0042</div>
+                        <div class="student-program">BS Computer Science</div>
+                    </div>
+                    <div class="student-card card-3" data-name="Juan Dela Cruz" data-id="2023-0105" data-program="BS Information Systems">
+                        <div class="student-name">Juan Dela Cruz</div>
+                        <div class="student-id">ID: 2023-0105</div>
+                        <div class="student-program">BS Information Systems</div>
+                    </div>
+                    <div class="student-card card-4" data-name="Alyssa Reyes" data-id="2023-0211" data-program="BS Software Engineering">
+                        <div class="student-name">Alyssa Reyes</div>
+                        <div class="student-id">ID: 2023-0211</div>
+                        <div class="student-program">BS Software Engineering</div>
+                    </div>
+                    <div class="student-card card-5" data-name="Gabriel Cruz" data-id="2023-0389" data-program="BS Cyber Security">
+                        <div class="student-name">Gabriel Cruz</div>
+                        <div class="student-id">ID: 2023-0389</div>
+                        <div class="student-program">BS Cyber Security</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-close" onclick="closeModal('profilesModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Modal Controls
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+            }
+        }
+
+        function closeModalOnOverlay(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.classList.remove('active');
+            }
+        }
+
+        // Story Book Modal Specific Logic
+        function openStoryModal(button) {
+            const card = button.closest('.story-card');
+            const img = card.getAttribute('data-img');
+            const title = card.getAttribute('data-title');
+            const desc = card.getAttribute('data-desc');
+
+            document.getElementById('modalImg').src = img;
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDesc').textContent = desc;
+
+            openModal('storyModal');
+        }
+
+        // Envelope Animation Logic
+        function toggleEnvelope() {
+            const envelope = document.getElementById('envelope');
+            envelope.classList.toggle('open');
+        }
+
+        function closeEnvelope() {
+            const envelope = document.getElementById('envelope');
+            envelope.classList.remove('open');
+        }
+
+        // Student Profile Filter Search Logic
+        function filterStudents() {
+            const input = document.getElementById('studentSearchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('#studentsContainer .student-card');
+
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                const id = card.getAttribute('data-id').toLowerCase();
+                const program = card.getAttribute('data-program').toLowerCase();
+
+                if (name.includes(input) || id.includes(input) || program.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Toast Message Notification
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
